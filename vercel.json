@@ -2,14 +2,18 @@
     "version": 2,
     "builds": [
         {
-            "src": "chatbot.html",
+            "src": "public/**",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/",
-            "dest": "/chatbot.html"
+            "dest": "public/chatbot.html"
+        },
+        {
+            "src": "/statics/user.png",
+            "dest": "public/statics/user.png"
         }
     ]
 }
